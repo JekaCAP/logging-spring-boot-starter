@@ -18,13 +18,17 @@
 ### До подключения Logging Spring Boot Starter
 
 ```java
-System.out.println("Hello World");
+public class ExampleService {
+    public void doSomething() {
+        System.out.println("Hello World");
+    }
+}
 ```
 - Вывод будет стандартным: Hello World
 
 ### После подключения Logging Spring Boot Starter
 
-```java
+```text
 [DEBUG] Entering: void ru.boot.example.ExampleService.doSomething()
 Hello World
 [DEBUG] Exiting: void ru.boot.example.ExampleService.doSomething()
@@ -49,10 +53,12 @@ Hello World
 
 В application.yml можно настроить:
 
+```yaml
 logging:
   starter:
     enabled: true      # Включение/отключение логирования
     prefix: DEBUG      # Префикс уровня логирования (INFO, DEBUG, и т.д.)
+```
 
 ---
 
