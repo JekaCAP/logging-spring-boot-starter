@@ -24,7 +24,10 @@ public class ExampleService {
     }
 }
 ```
-- Вывод будет стандартным: Hello World
+- Вывод будет стандартным:
+```text
+Hello World
+```
 
 ### После подключения Logging Spring Boot Starter
 
